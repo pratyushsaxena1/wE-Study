@@ -1,2 +1,8 @@
-"HTML & PHP/*.php" linguist-language=PHP
+"HTML & PHP/joinroomcheck.php" linguist-language=PHP
+"HTML & PHP/checklogin.php" linguist-language=PHP
+"HTML & PHP/insert.php" linguist-language=PHP
+"HTML & PHP/sendemailcheck.php" linguist-language=PHP
+"HTML & PHP/addstudyresourcecheck.php" linguist-language=PHP
+"HTML & PHP/createroomcheck.php" linguist-language=PHP
+
 "HTML & PHP/*" linguist-language=HTML
