@@ -1,3 +1,4 @@
+"HTML & PHP/*" linguist-language=HTML
 "HTML & PHP/insert.php"           linguist-language=PHP
 "HTML & PHP/loggedinuser.php"     linguist-language=PHP
 "HTML & PHP/studyresources.php"   linguist-language=PHP
@@ -9,5 +10,3 @@
 "HTML & PHP/joinroom.php"         linguist-language=PHP
 "HTML & PHP/sendemailcheck.php"   linguist-language=PHP
 "HTML & PHP/insertlogin.php"      linguist-language=PHP
-
-"HTML & PHP/*" linguist-language=HTML
