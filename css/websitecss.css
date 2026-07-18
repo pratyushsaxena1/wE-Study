@@ -4,8 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Permanent+Marker&display=swap');
 
 /* Background color for all pages */
+html, body {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 /* Color of all the links */
@@ -24,7 +29,7 @@ body {
         font-family: 'Montserrat', sans-serif;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     header {
         text-align: center;
         padding: 2vw;
@@ -37,12 +42,14 @@ body {
 /* "Study collaboratively with the click of a button" on the home page */
 @media only screen and (max-width: 600px) {
     #mainheader {
-        font-size: 8vw;
+        font-size: 6vw;
         font-family: 'Montserrat', sans-serif;
-        width: 99.5vw;
+        width: 90vw;
+        box-sizing: border-box;
+        padding: 0 3vw;
         text-align: center;
         color: white;
-        line-height: 13.5vw;
+        line-height: 8vw;
         margin: 0;
         position: absolute;
         top: 58vw;
@@ -50,7 +57,7 @@ body {
         transform: translate(-50%, -50%);
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #mainheader {
         font-size: 3.6vw;
         font-family: 'Montserrat', sans-serif;
@@ -65,48 +72,34 @@ body {
     }
 }
 
-/* Paint stroke on the home page under "collaboratively" and its animation */
+/* Cyan brush-stroke underline on the home page under "collaboratively" (drawn in with CSS) */
 @media only screen and (max-width: 600px) {
+    /* Hidden on phones: the heading wraps to multiple lines here, so a
+       fixed-position underline can't line up under a single word. */
     #paintstroke {
-        width: 57vw; 
-        height: 3.2vw; 
+        display: none;
+    }
+}
+@media only screen and (min-width: 601px) {
+    #paintstroke {
+        width: 25vw;
+        height: 1.4vw;
         position: absolute;
-        opacity: 0;
-        background-attachment: fixed;
-        left: 34vw; 
-        top: 55vw;
+        left: 20vw;
+        top: 18.2vw;
+        background: linear-gradient(90deg, #00eaff 0%, #22d3ee 60%, rgba(34, 211, 238, 0) 100%);
+        border-radius: 999px;
         transform-origin: 0% 50%;
-        animation: underlineappearphone 2s, changeopacity 1000s infinite;
-        animation-delay: 2s, 3s;
+        transform: scaleX(0);
+        animation: underlineappear 1.2s ease-out 2s forwards;
     }
 }
-@media only screen and (min-width: 600px) {
-    #paintstroke {
-        width: 25vw; 
-        height: 2vw; 
-        position: fixed; 
-        opacity: 0;
-        left: 20vw; 
-        top: 18.2vw; 
-        transform-origin: 0% 50%;
-        animation: underlineappearlaptop 2s, changeopacity 1000s infinite;
-        animation-delay: 2s, 3s;
-    }
-}
-@keyframes changeopacity {
-    0% {opacity: 100;}
-    100% {opacity: 100;}
-}
-@keyframes underlineappearphone {
-    0% {transform: scale(0, 1); opacity: 100;}
-    100% {transform: scale(1, 0.96); opacity: 100;}
-}
-@keyframes underlineappearlaptop {
-    0% {transform: scale(0, 1); opacity: 100;}
-    100% {transform: scale(1, 0.96); opacity: 100;}
+@keyframes underlineappear {
+    0% {transform: scaleX(0);}
+    100% {transform: scaleX(1);}
 }
 
-/* Shimmering w3-Study logo in the top left corner */
+/* Shimmering wE-Study logo in the top left corner */
 @media only screen and (max-width: 600px) {
     .shimmer {
         font-size: 5.5vw;
@@ -141,7 +134,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     .shimmer {
         font-size: 2.6vw;
         font-family: 'Montserrat', sans-serif;
@@ -190,16 +183,24 @@ body {
         background-color: transparent;
         position: absolute;
         top: 2.5vw;
-        right: 0.5vw;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding-right: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
         font-family: 'Montserrat', sans-serif;
     }
     .mainmenu button {
         cursor: pointer;
         color: white;
-        font-size: 2.77vw;
+        font-size: 3vw;
+        white-space: nowrap;
         font-family: 'Montserrat', sans-serif;
         border: none;
-        padding: 2vw;
+        padding: 1vw;
         background: none;
         float: left;
     }
@@ -292,7 +293,7 @@ body {
         display: block;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     .mainmenu {
         background-color: black;
         position: absolute;
@@ -616,7 +617,7 @@ body {
         transform: translate(-50%, -50%);
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #fheader {
         color: white;
         font-size: 2.5vw;
@@ -901,7 +902,7 @@ body {
     }
     hr {
         height: 0.2vw;
-        width: 100vw;
+        width: 100%;
         background-color: white;
     }
     #searchbar {
@@ -936,7 +937,7 @@ body {
         font-size: 2.5vw;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     p {
         text-align: center;
         padding-bottom: 2vw;
@@ -946,7 +947,7 @@ body {
     }
     hr {
         height: 0.2vw;
-        width: 100vw;
+        width: 100%;
         background-color: white;
     }
     #searchbar {
@@ -1117,7 +1118,7 @@ body {
         transform: translate(-50vw, -50vw);
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #submitformbutton {
         width: 30vw;
         height: 6vw;
@@ -1318,7 +1319,7 @@ body {
     	line-height: 5vw;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #guidep1 {
     	color: white;
     	display: inline-block;
@@ -1395,7 +1396,7 @@ body {
         background-color: gray;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #back {
         text-align: center;
         width: 10vw;
@@ -1439,7 +1440,7 @@ body {
         padding: 0.5vw;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #addstudyresourcebutton {
         cursor: pointer;
         color: white;
@@ -1563,7 +1564,7 @@ body {
         margin-top: 4vw;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     #usermessage {
         position: absolute;
         top: 49vw;

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <head>
-    <title>w3-Study: Study online with others for free</title>
+    <title>wE-Study: Study online with others for free</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Study online collaboratively with w3-Study">
+    <meta name="description" content="Study online collaboratively with wE-Study">
     <link rel="icon" href="https://lh3.googleusercontent.com/Ds7Q0Br23zo_VCLVkmkx4LOK692sTRZaGP6hPL1e2g85EiWRn0XlEHMpZtE5mCWk9zVMCL-Y1dZN118HLn6QbQ9_TkV_mbWJSDUf2DRoixvj3rCI_lVxCDDcqHznZoNyRERVtyLTPw=w2400">
 </head>
 <body>
     <link href="/css/websitecss.css" rel="stylesheet" type = "text/css">
 	<header class = "header"> Study Resources </header>
     <hr>
-    <p> Here are resources made by students at TJ who use w3-Study. Click the button below to add your own. </p>
+    <p> Here are resources made by students at TJ who use wE-Study. Click the button below to add your own. </p>
 	<button id = "addstudyresourcebutton" onclick = "addstudyresource()"> Add Study Resource </button>
 	<br>
 	<?php
