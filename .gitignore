@@ -1,0 +1,5 @@
+# Real database credentials — never commit these.
+html/config.php
+
+# OS / editor cruft
+.DS_Store

@@ -7,10 +7,16 @@
 </head>
 <body>
     <link href="/css/websitecss.css" rel="stylesheet" type = "text/css">
-	<header class = "header"> Email Verification </header>
-    <hr>
-	<!-- <p>Check your <a href = "https://webmail.tjhsst.edu/" target = _blank style = "color: cyan">Webmail</a> to create your account. It make take a few minutes for the email to go through. <br> Please leave this tab open until you verify your email.</p> -->
-	<p>Check your email to create your account. It make take a few minutes for the email to go through. <br> Please leave this tab open until you verify your email.</p>
+	<header class = "header"> Sign Up </header>
+	<hr>
+	<form action = "/html/insertlogin.php" method="POST" id="my-form-3">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="userpassword" name="userpassword" placeholder="Password" required><br>
+		<button type = "submit" name = "submit" id = "submitformbutton4">Submit</button>
+    </form>
+    <p class = "terms">By signing up, you agree to our <a href = "/html/terms.php" target = blank_>Terms and Conditions</a>.</p>
 	<button id = "back" onclick = "back()"> Back </button>
 	<script src = "/js/websitejs.js"></script>
 </body>

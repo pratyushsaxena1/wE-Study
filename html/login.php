@@ -9,14 +9,14 @@
     <link href="/css/websitecss.css" rel="stylesheet" type = "text/css">
 	<header class = "header"> Sign Up </header>
 	<hr>
-	<form action = "/html/sendemailcheck.php" method="POST" id="my-form-3">
+	<form action = "insertlogin.php" method="POST" id="my-form-3">
         <label for="email">Email:</label><br>
         <input type="text" id="email" name="email" placeholder="Email" required><br>
         <label for="password">Password:</label><br>
         <input type="password" id="userpassword" name="userpassword" placeholder="Password" required><br>
 		<button type = "submit" name = "submit" id = "submitformbutton4">Submit</button>
     </form>
-    <p class = "terms">By signing up, you agree to our <a href = "/html/terms.php" target = blank_>Terms and Conditions</a>.</p>
+    <!-- <p class = "terms">By signing up, you agree to our <a href = "/html/terms.php" target = blank_>Terms and Conditions</a>.</p> -->
 	<button id = "back" onclick = "back()"> Back </button>
 	<script src = "/js/websitejs.js"></script>
 </body>
