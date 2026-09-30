@@ -1,13 +1,1 @@
-"HTML & PHP/insert.php"           linguist-language=PHP
-"HTML & PHP/loggedinuser.php"     linguist-language=PHP
-"HTML & PHP/studyresources.php"   linguist-language=PHP
-"HTML & PHP/checklogin.php"       linguist-language=PHP
-"HTML & PHP/successemailsend.php" linguist-language=PHP
-"HTML & PHP/retrievelogin.php"    linguist-language=PHP
-"HTML & PHP/insertformtoedit.php" linguist-language=PHP
-"HTML & PHP/createroom.php"       linguist-language=PHP
-"HTML & PHP/joinroom.php"         linguist-language=PHP
-"HTML & PHP/sendemailcheck.php"   linguist-language=PHP
-"HTML & PHP/insertlogin.php"      linguist-language=PHP
-
-"HTML & PHP/*" linguist-language=HTML
+*.php linguist-language=PHP
